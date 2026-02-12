@@ -3,7 +3,7 @@
 #include <ctime>
 #include <string>
 
-using namespace std; 
+using namespace std;
 
 string pickRandom(const string arr[], int size)
 {
@@ -142,14 +142,14 @@ int main()
     {
         showMainMenu();
         cout << "Enter choice (1-3): ";
-        choice = getNumberInRange(1, 3);
+        choice = getNumbersBetween(1, 3);
 
         switch (choice)
         {
             case 1:
             {
                 showStyleMenu();
-                int styleChoice = getNumberInRange(1, 5);
+                int styleChoice = getNumbersBetween(1, 5);
                 generateOutfits(styleChoice, 1);
                 break;
             }
@@ -157,7 +157,7 @@ int main()
             case 2:
             {
                 showStyleMenu();
-                int styleChoice = getNumberInRange(1, 5);
+                int styleChoice = getNumbersBetween(1, 5);
                 generateOutfits(styleChoice, 3);
                 break;
             }
